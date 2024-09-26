@@ -21,6 +21,10 @@ public class ScoreTable {
     private Long id;
 
     @ManyToOne
+    @JoinColumn(name = "playerId", referencedColumnName = "playerId")
+    private Player player;
+
+    @ManyToOne
     @JoinColumn(name = "matchId", referencedColumnName = "matchId")
     private Match match;
 

@@ -18,7 +18,7 @@ import com.cricket.app.Model.Team;
 import com.cricket.app.Service.TeamService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000") 
+@CrossOrigin("*") 
 @RequestMapping("/teams")
 public class TeamController {
 
